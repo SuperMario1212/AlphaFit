@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckList">
+
+    <ListView
+        android:id="@+id/citieslist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="#429CD8"
+        android:cacheColorHint="#EF0606"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addcities" />
+
+    <EditText
+        android:id="@+id/addcities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="add workout"
+        android:inputType="textPersonName"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toTopOf="@+id/citieslist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbutton" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:backgroundTint="#787ADF"
+        app:layout_constraintBottom_toTopOf="@+id/addcities"
+        app:layout_constraintStart_toStartOf="@+id/descending"
+        app:layout_constraintTop_toBottomOf="@+id/descending" />
+
+    <Button
+        android:id="@+id/ascending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        app:backgroundTint="#479EDF"
+        app:icon="@android:drawable/ic_menu_sort_alphabetically"
+        app:iconPadding="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toTopOf="@+id/descending"
+        app:layout_constraintEnd_toEndOf="@+id/clearlist"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/descending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#479EDF"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconPadding="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toTopOf="@+id/addbutton"
+        app:layout_constraintStart_toStartOf="@+id/ascending"
+        app:layout_constraintTop_toBottomOf="@+id/ascending" />
+
+    <Button
+        android:id="@+id/clearlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="7dp"
+        android:text="Clear All"
+        app:backgroundTint="#191718"
+        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
