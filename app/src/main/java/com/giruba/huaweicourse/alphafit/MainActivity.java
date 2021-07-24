@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
         checklist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, CheckList.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, CheckList.class);
+                startActivity(intent);
             }
         });
     }
