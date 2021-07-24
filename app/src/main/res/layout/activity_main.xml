@@ -11,81 +11,84 @@
         android:id="@+id/menutxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="74dp"
         android:text="Main Menu"
-        app:layout_constraintBottom_toTopOf="@+id/musicbtn"
-        app:layout_constraintStart_toStartOf="@+id/button3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="15dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/tutorialsbtn"
-        app:layout_constraintEnd_toEndOf="@+id/musicbtn" />
+        app:layout_constraintBottom_toTopOf="@+id/musicbtn"
+        app:layout_constraintEnd_toEndOf="@+id/musicbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/musicbtn"
+        app:layout_constraintTop_toBottomOf="@+id/menutxt" />
 
     <Button
         android:id="@+id/musicbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginEnd="112dp"
         android:text="Play Music"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/caloriestxt"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/tutorialsbtn"
+        app:layout_constraintEnd_toEndOf="@+id/tutorialsbtn"
+        app:layout_constraintStart_toStartOf="@+id/tutorialsbtn"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
         android:id="@+id/tutorialsbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="20dp"
         android:text="tutorials"
         app:layout_constraintBottom_toTopOf="@+id/trainingchecklistbtn"
-        app:layout_constraintEnd_toEndOf="@+id/musicbtn" />
+        app:layout_constraintEnd_toEndOf="@+id/trainingchecklistbtn"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/trainingchecklistbtn"
+        app:layout_constraintTop_toBottomOf="@+id/musicbtn" />
 
     <Button
         android:id="@+id/trainingchecklistbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="39dp"
         android:text="Training checkList"
         app:layout_constraintBottom_toTopOf="@+id/bodytransformationbtn"
-        app:layout_constraintEnd_toEndOf="@+id/bodytransformationbtn" />
+        app:layout_constraintEnd_toEndOf="@+id/bodytransformationbtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bodytransformationbtn"
+        app:layout_constraintTop_toBottomOf="@+id/tutorialsbtn" />
 
     <Button
         android:id="@+id/bodytransformationbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="266dp"
         android:text="Body Transformation"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/qrbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trainingchecklistbtn" />
 
     <Button
         android:id="@+id/qrbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Qr Scan"
+        app:layout_constraintBottom_toTopOf="@+id/gymlocationbtn"
         app:layout_constraintEnd_toEndOf="@+id/bodytransformationbtn"
         app:layout_constraintStart_toStartOf="@+id/bodytransformationbtn"
         app:layout_constraintTop_toBottomOf="@+id/bodytransformationbtn" />
 
     <Button
         android:id="@+id/gymlocationbtn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         android:text="Search nearest gym !"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/qrbtn"
+        app:layout_constraintStart_toStartOf="@+id/qrbtn"
         app:layout_constraintTop_toBottomOf="@+id/qrbtn" />
 
     <TextView
