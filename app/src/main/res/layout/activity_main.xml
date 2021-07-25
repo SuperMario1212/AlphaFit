@@ -18,10 +18,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/revokeBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="SignOut"
         app:layout_constraintBottom_toTopOf="@+id/musicbtn"
         app:layout_constraintEnd_toEndOf="@+id/musicbtn"
         app:layout_constraintHorizontal_bias="0.0"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tutorialsbtn"
         app:layout_constraintEnd_toEndOf="@+id/tutorialsbtn"
         app:layout_constraintStart_toStartOf="@+id/tutorialsbtn"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/revokeBtn" />
 
     <Button
         android:id="@+id/tutorialsbtn"

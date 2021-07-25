@@ -141,6 +141,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+        android:id="@+id/huaweiIDLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="62dp"
