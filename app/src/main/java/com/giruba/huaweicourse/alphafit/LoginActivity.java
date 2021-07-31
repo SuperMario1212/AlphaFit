@@ -89,6 +89,7 @@ public class LoginActivity extends AppCompatActivity {
                 // Switch Activity Only when success
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
         task.addOnFailureListener(new OnFailureListener() {
@@ -229,6 +230,7 @@ public class LoginActivity extends AppCompatActivity {
             // Switch Activity Only when success
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
+            finish();
         }
     }
     //  Query the Health authorization and display the authorization screen when necessary.

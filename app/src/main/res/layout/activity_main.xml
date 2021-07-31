@@ -1,124 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/poster"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/menutxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="74dp"
-        android:text="Main Menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/revokeBtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="SignOut"
-        app:layout_constraintBottom_toTopOf="@+id/musicbtn"
-        app:layout_constraintEnd_toEndOf="@+id/musicbtn"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/musicbtn"
-        app:layout_constraintTop_toBottomOf="@+id/menutxt" />
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/musicbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Play Music"
-        app:layout_constraintBottom_toTopOf="@+id/tutorialsbtn"
-        app:layout_constraintEnd_toEndOf="@+id/tutorialsbtn"
-        app:layout_constraintStart_toStartOf="@+id/tutorialsbtn"
-        app:layout_constraintTop_toBottomOf="@+id/revokeBtn" />
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENU"
+                android:textColor="#FC560BE1"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/alphafit"
+                android:layout_width="82dp"
+                android:layout_height="82dp"/>
 
-    <Button
-        android:id="@+id/tutorialsbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="tutorials"
-        app:layout_constraintBottom_toTopOf="@+id/trainingchecklistbtn"
-        app:layout_constraintEnd_toEndOf="@+id/trainingchecklistbtn"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="@+id/trainingchecklistbtn"
-        app:layout_constraintTop_toBottomOf="@+id/musicbtn" />
 
-    <Button
-        android:id="@+id/trainingchecklistbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Training checkList"
-        app:layout_constraintBottom_toTopOf="@+id/bodytransformationbtn"
-        app:layout_constraintEnd_toEndOf="@+id/bodytransformationbtn"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/bodytransformationbtn"
-        app:layout_constraintTop_toBottomOf="@+id/tutorialsbtn" />
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/bodytransformationbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Body Transformation"
-        app:layout_constraintBottom_toTopOf="@+id/qrbtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/trainingchecklistbtn" />
+        <GridLayout
+            android:layout_width= "match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:rowCount="3"
+            android:columnCount="2">
 
-    <Button
-        android:id="@+id/qrbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Qr Scan"
-        app:layout_constraintBottom_toTopOf="@+id/gymlocationbtn"
-        app:layout_constraintEnd_toEndOf="@+id/bodytransformationbtn"
-        app:layout_constraintStart_toStartOf="@+id/bodytransformationbtn"
-        app:layout_constraintTop_toBottomOf="@+id/bodytransformationbtn" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/step_stats"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
-    <Button
-        android:id="@+id/gymlocationbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Search nearest gym !"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/qrbtn"
-        app:layout_constraintStart_toStartOf="@+id/qrbtn"
-        app:layout_constraintTop_toBottomOf="@+id/qrbtn" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backgroundcolor"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/steptxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="32dp"
-        android:hint="Steps: "
-        app:layout_constraintStart_toStartOf="@+id/distancetxt"
-        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/step" />
 
-    <TextView
-        android:id="@+id/caloriestxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="63dp"
-        android:hint="Calories: "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="STEP TRACKER"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/distancetxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="23dp"
-        android:hint="Distance: "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/steptxt" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/musicbtn"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                app:cardBackgroundColor="#ca72e0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backgroundcolor"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/musicrun" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="MUSIC"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/trainingchecklistbtn"
+                app:cardBackgroundColor="#ca72e0"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@drawable/backgroundcolor"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/timer"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="WORKOUT TIMER"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tutorialsbtn"
+                app:cardBackgroundColor="#ca72e0"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundcolor"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/tutorials"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="TUTORIALS"
+                        android:textAllCaps="true"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/qrbtn"
+                app:cardBackgroundColor="#ca72e0"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundcolor"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/qr"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="QR SCAN"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/signout"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backgroundcolor"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/signout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="SIGN OUT"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

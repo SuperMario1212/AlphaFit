@@ -64,21 +64,21 @@ public class AbsTutorial extends AppCompatActivity {
 
         modelArrayList.add(new MyModel(
                 "No Equipment for Abs",
-                "Description 02",
+                "learn to build abs without equipment!",
                 "10 mins",
                 "https://youtu.be/R8oZk2wnpY0",
                 R.drawable.no_equipment_abs));
 
         modelArrayList.add(new MyModel(
-                "Men Link for Abs",
-                "Description",
+                "Men Abs Exercises",
+                "Build abs if you have dumbbells, weights equipments etc",
                 "7 mins",
                 "https://youtu.be/MoIZR4p_Q5w",
                 R.drawable.men_link_abs));
 
         modelArrayList.add(new MyModel(
-                "Women Link for Abs",
-                "women_link",
+                "Women Abs Exercises",
+                "Abs workout for ladies !",
                 "10 mins",
                 "https://youtu.be/AnYl6Nk9GOA",
                 R.drawable.women_link_abs));

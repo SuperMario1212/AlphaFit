@@ -14,6 +14,7 @@ package com.giruba.huaweicourse.alphafit;
 //}
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,36 +35,29 @@ import static android.content.ContentValues.TAG;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView steps;
-    private TextView distance;
-    private TextView calories;
 
-    Button signOutBtn;
-    Button playmusic;
-    Button tutorials;
-    Button checklist;
-    Button bodytrans;
-    Button qrscan;
-    Button searchgym;
+
+    CardView playmusic;
+    CardView tutorials;
+    CardView checklist;
+    CardView qrscan;
+    CardView stepstats;
+    CardView signOut;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //these use toast text
-        steps = findViewById(R.id.steptxt);
-        distance = findViewById(R.id.distancetxt);
-        calories = findViewById(R.id.caloriestxt);
 
         //these needs to direct to new activity
-        signOutBtn = findViewById(R.id.revokeBtn);
-        playmusic = (Button) findViewById(R.id.musicbtn);
-        tutorials = (Button) findViewById(R.id.tutorialsbtn);
-        checklist = (Button) findViewById(R.id.trainingchecklistbtn);
-        bodytrans = (Button) findViewById(R.id.bodytransformationbtn);
-        qrscan = (Button) findViewById(R.id.qrbtn);
-        searchgym = (Button) findViewById(R.id.gymlocationbtn);
+        playmusic = (CardView)findViewById(R.id.musicbtn);
+        tutorials = (CardView)findViewById(R.id.tutorialsbtn);
+        checklist = (CardView)findViewById(R.id.trainingchecklistbtn);
+        qrscan = (CardView)findViewById(R.id.qrbtn);
+        stepstats = (CardView)findViewById(R.id.step_stats);
+        signOut = (CardView) findViewById(R.id.signout);
 
 
         tutorials.setOnClickListener(new View.OnClickListener() {
@@ -83,7 +77,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        signOutBtn.setOnClickListener(new View.OnClickListener() {
+
+        //play music
+        //ListMusicActivity.class
+        playmusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListMusicActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        qrscan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QRScan.class);
+                startActivity(intent);
+            }
+        });
+
+        stepstats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StepStats.class);
+                startActivity(intent);
+            }
+        });
+
+
+        signOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AccountAuthParams authParams = new AccountAuthParamsHelper(AccountAuthParams.DEFAULT_AUTH_REQUEST_PARAM).createParams();
@@ -109,5 +132,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
+
+
     }
 }

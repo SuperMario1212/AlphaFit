@@ -65,21 +65,21 @@ public class ArmTutorial extends AppCompatActivity {
 
         modelArrayList.add(new MyModel(
                 "No Equipment for Arm",
-                "Description 02",
+                "learn to build arms without equipment!",
                 "10 mins",
                 "https://youtu.be/wwKb-wZCEjs",
                 R.drawable.no_equipment_arm));
 
         modelArrayList.add(new MyModel(
-                "Men Link for Arm",
-                "Description",
+                "Men Arm Exercises",
+                "Build arms if you have dumbbells, weights equipments etc",
                 "8 mins",
                 "https://youtu.be/LHBINS08Yy0",
                 R.drawable.men_link_arm));
 
         modelArrayList.add(new MyModel(
-                "Women Link for Arm",
-                "women_link",
+                "Women Arm Exercises",
+                "Arms workout for ladies !",
                 "12 mins",
                 "https://youtu.be/l0CwCvJbGZI",
                 R.drawable.women_link_arm));

@@ -63,21 +63,22 @@ public class ChestTutorial extends AppCompatActivity {
         //add items to list
 
         modelArrayList.add(new MyModel(
-                "download_no_equipment",
-                "Description 02",
+                "No Equipment for Chest",
+                "learn to build chest muscles without equipment!",
                 "10 mins",
                 "https://youtu.be/aL8kJ2nmqVQ",
                 R.drawable.no_equipment_chest));
 
         modelArrayList.add(new MyModel(
-                "men_link",
-                "Description",
+                "Men Abs exercises",
+                "Build chest muscles with dumbbells, weights equipments etc",
                 "7 mins",
                 "https://youtu.be/qM1nv8qcsN4",
                 R.drawable.men_link_chest));
 
-        modelArrayList.add(new MyModel("Women Chest Link",
-                "women_link",
+        modelArrayList.add(new MyModel(
+                "Women Chest Exercises",
+                "Comprehensive chest workout for women",
                 "10 mins",
                 "https://youtu.be/1n5H4KwB_ZU",
                 R.drawable.women_link_chest));
