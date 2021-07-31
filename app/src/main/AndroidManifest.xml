@@ -4,7 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- check network permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- check network permissions -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -24,50 +25,63 @@
         android:roundIcon="@mipmap/alphafit_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlphaFit">
-        <activity android:name=".MusicPlayerActivity"></activity>
+        <activity android:name=".MusicPlayerActivity" />
         <activity android:name=".ListMusicActivity" />
         <activity android:name=".StepStats" />
         <activity android:name=".QRScan" />
         <activity android:name=".ImageScan" />
         <activity android:name=".CameraScan" />
         <activity android:name=".CheckList" />
+
         <activity
             android:name=".AbsTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".LegTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".ArmTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".ChestTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".TutorialActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".SwipeViewActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".LoginActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait" />
     </application>
-
 </manifest>
+
