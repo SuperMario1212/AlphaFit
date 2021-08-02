@@ -5,6 +5,8 @@
 It will only be in the **master branch** when I merge the pull request~
 
 
+<h1>Introduction</h1>
+<p>Last updated: July 31, 2021</p>
 The main motive of this app, is to provide user the pleasure of listening to music while they were performing their workout. Such as when they were going for an outdoor run, they can plug their earphone, choose a music and start jogging while listening to the music. After finishing jogging, they can view their step statistics as well as distance statistics to track their fitness activities or jogging performance. 
 
 For bodybuilders, this app also has a tutorial interface which lets them to access workout tutorials. To access these videos, they just need to have internet connection, when clicking the video, it will guide them to the YouTube videos right on the spot. 
