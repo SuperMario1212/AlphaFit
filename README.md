@@ -1,8 +1,18 @@
 # AlphaFit
 
-Newly Added Codes will always be in the **dev branch**!
+<h1>Newly Added Codes will always be in the **dev branch**!</h1>
 
 It will only be in the **master branch** when I merge the pull request~
+
+
+The main motive of this app, is to provide user the pleasure of listening to music while they were performing their workout. Such as when they were going for an outdoor run, they can plug their earphone, choose a music and start jogging while listening to the music. After finishing jogging, they can view their step statistics as well as distance statistics to track their fitness activities or jogging performance. 
+
+For bodybuilders, this app also has a tutorial interface which lets them to access workout tutorials. To access these videos, they just need to have internet connection, when clicking the video, it will guide them to the YouTube videos right on the spot. 
+
+Sometimes when we are working out, we tend to forget our next set of exercises, therefore, the workout timer comes in handy to help record exercises name and exercise time. 
+There is also a QR scan equipped in this app, with a usable QR code, using the QR scan can direct the user to the directory/ link of the QR code.
+
+Simplicity is our major consideration ! We hope you can provide feedbacks no matter it gives you good or bad experience. Thank You !
 
 
 <h1>Privacy Policy</h1>
