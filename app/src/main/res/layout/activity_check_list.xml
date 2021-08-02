@@ -4,79 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
     tools:context=".CheckList">
 
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/timerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/startStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="end"
+            android:onClick="startStopTapped"
+            android:text="START"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:backgroundTint="#c93035"
+            android:onClick="resetTapped"
+            android:text="RESET"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
     <ListView
-        android:id="@+id/citieslist"
+        android:id="@+id/workout_list"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
-        android:background="#429CD8"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
         android:cacheColorHint="#EF0606"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addcities" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_add" />
 
     <EditText
-        android:id="@+id/addcities"
-        android:layout_width="wrap_content"
+        android:id="@+id/et_workout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="23dp"
         android:ems="10"
         android:hint="add workout"
         android:inputType="textPersonName"
         android:textColor="#050505"
-        app:layout_constraintBottom_toTopOf="@+id/citieslist"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addbutton" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/workout_list"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/addbutton"
+        android:id="@+id/btn_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/black"
         android:text="Add"
-        app:backgroundTint="#787ADF"
-        app:layout_constraintBottom_toTopOf="@+id/addcities"
-        app:layout_constraintStart_toStartOf="@+id/descending"
-        app:layout_constraintTop_toBottomOf="@+id/descending" />
-
-    <Button
-        android:id="@+id/ascending"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="66dp"
-        app:backgroundTint="#479EDF"
-        app:icon="@android:drawable/ic_menu_sort_alphabetically"
-        app:iconPadding="@dimen/cardview_compat_inset_shadow"
-        app:layout_constraintBottom_toTopOf="@+id/descending"
-        app:layout_constraintEnd_toEndOf="@+id/clearlist"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/descending"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:backgroundTint="#479EDF"
-        app:icon="@android:drawable/ic_menu_revert"
-        app:iconPadding="@dimen/cardview_compat_inset_shadow"
-        app:layout_constraintBottom_toTopOf="@+id/addbutton"
-        app:layout_constraintStart_toStartOf="@+id/ascending"
-        app:layout_constraintTop_toBottomOf="@+id/ascending" />
-
-    <Button
-        android:id="@+id/clearlist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="7dp"
-        android:text="Clear All"
-        app:backgroundTint="#191718"
-        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toTopOf="@+id/workout_list"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/et_workout"
+        app:layout_constraintTop_toBottomOf="@+id/timerText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

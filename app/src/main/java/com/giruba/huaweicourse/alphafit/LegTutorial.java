@@ -64,20 +64,21 @@ public class LegTutorial extends AppCompatActivity {
 
         modelArrayList.add(new MyModel(
                 "No Equipment For Leg",
-                "Description 02",
+                "learn to build legs muscle without equipment!",
                 "8 mins",
                 "https://youtu.be/UKM_3T2-Huc",
                 R.drawable.no_equipment_leg));
 
         modelArrayList.add(new MyModel(
-                "Men Link for Leg",
-                "Description",
+                "Men Leg exercises",
+                "Learn this to avoid chicken leg",
                 "8 mins",
                 "https://youtu.be/eFtbf720CQY",
                 R.drawable.men_link_leg));
 
-        modelArrayList.add(new MyModel("Women Chest Link",
-                "Women Link for Leg",
+        modelArrayList.add(new MyModel(
+                "Women Legs Exercises",
+                "Legs workout for women",
                 "13 mins",
                 "https://youtu.be/Fu_oExrPX68",
                 R.drawable.women_link_leg));

@@ -2,45 +2,91 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.giruba.huaweicourse.alphafit">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- check network permissions -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/alphafit_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/alphafit_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AlphaFit">
-        <activity android:name=".CheckList"></activity>
+        android:theme="@style/Theme.AlphaFit"
+        android:usesCleartextTraffic="true">
+
+        <meta-data android:name="com.huawei.hms.client.channel.androidMarket"
+            android:value="false"/>
+
+        <activity android:name=".MusicPlayerActivity" />
+        <activity android:name=".ListMusicActivity" />
+        <activity android:name=".StepStats" />
+        <activity android:name=".QRScan" />
+        <activity android:name=".ImageScan" />
+        <activity android:name=".CameraScan" />
+        <activity android:name=".CheckList" />
+
         <activity
             android:name=".AbsTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".LegTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".ArmTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".ChestTutorial"
             android:parentActivityName=".TutorialActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".TutorialActivity"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".SwipeViewActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
+
