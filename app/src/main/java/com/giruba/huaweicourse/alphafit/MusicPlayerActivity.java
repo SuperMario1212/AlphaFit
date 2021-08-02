@@ -1,6 +1,7 @@
 package com.giruba.huaweicourse.alphafit;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
@@ -18,6 +19,7 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
     TextView tvTime, tvDuration, tvTitle, tvArtist;
     SeekBar seekBarTime, seekBarVolume;
     Button btnPlay;
+    private ActionBar actionBar;
 
     MediaPlayer musicPlayer;
 
@@ -26,8 +28,14 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_player);
 
+        actionBar = getSupportActionBar();
+
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Song song = (Song) getIntent().getSerializableExtra("song");
+
+        String title = song.getTitle();
+        actionBar.setTitle(title);
 
         tvTime = findViewById(R.id.tvTime);
         tvDuration = findViewById(R.id.tvDuration);
@@ -39,7 +47,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements View.OnCli
 
         tvTitle.setText(song.getTitle());
         tvArtist.setText(song.getArtist());
-
 
         //plays music
         musicPlayer = new MediaPlayer();

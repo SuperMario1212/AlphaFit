@@ -1,6 +1,7 @@
 package com.giruba.huaweicourse.alphafit;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -26,10 +27,15 @@ public class ListMusicActivity extends AppCompatActivity {
     ListView lvSongs;
     SongsAdapter songsAdapter;
 
+    private ActionBar actionBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_music);
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Music List");
 
         lvSongs = findViewById(R.id.lvSongs);
 

@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/AlphaFit/app/src/main/res/layout/activity_check_list.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/AlphaFit/app/src/main/res/layout/activity_swipe_view.xml" value="0.1796875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/AlphaFit/app/src/main/res/layout/activity_tutorial.xml" value="0.1796875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/AlphaFit/app/src/main/res/layout/item_song.xml" value="0.1796875" />
       </map>
     </option>
   </component>
