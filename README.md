@@ -1,6 +1,6 @@
 # AlphaFit
 
-<strong>Newly Added Codes will always be in the **dev branch**!</strong>
+<strong>*Newly Added Codes will always be in the **dev branch**!</strong>
 
 It will only be in the **master branch** when I merge the pull request~
 
