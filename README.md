@@ -7,8 +7,7 @@ It will only be in the **master branch** when I merge the pull request~
 ---
 ### View our Articles on
 
-- [x] [HUAWEI Forum](https://l.facebook.com/l.php?u=https%3A%2F%2Fforums.developer.huawei.com%2FforumPortal%2Fen%2Ftopic%2F0201632000869510019%3Ffbclid%3DIwAR03GVffLV7L-cEr4Cf4Dot36h4XK-P4r9qwt_HhaROy0Ys3mhIQj0Z-_x4&h=AT1ZZqKel4qjEtNINxeWPGPLR9lrZA3-LP0pS0fVCw32Ym607E2jzgtlHpfh3NB3MDfV8DNQtAfxWuhX5GlBK-woCxO9tmzziDjjt98T0Ki0BV3RNl7TCixWlIbf&__tn__=-UK-R&c[0]=AT0_06w6AdrcAtXFZne34ZD8Nx3UfmZqB3EN8jIYXkZMLKTQ3HVOL5Wv2ZFYHWnlxN35dYliPc4J6_UXbMn7Jx4AgM3dRuSiupWhYFYlakXLC39ONUxtuvXENBxxGhkb3mA5OnWoN1YwmUrYl6_BopmSID6fjb3P7TfOd6D6VOcxT_ubjfLWgfmrZXAKVZ2ueEsGyvWydImkksJHqQ) 
-
+- [x] [HUAWEI Forum](https://forums.developer.huawei.com/forumPortal/en/topic/0201632000869510019?fbclid=IwAR03GVffLV7L-cEr4Cf4Dot36h4XK-P4r9qwt_HhaROy0Ys3mhIQj0Z-_x4) 
 - [x] [Medium](https://medium.com/@NgZheKai/alphafit-fitness-record-and-helper-manager-integrating-account-kit-and-ads-kit-part-1-c8324aeded14)
 
 <h1>Introduction</h1>
